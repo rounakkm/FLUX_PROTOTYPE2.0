@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CarbonTrack - Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="landing.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>🌍 CarbonTrack</h1>
+                <p>Measure • Reduce • Offset Your Carbon Footprint</p>
+            </div>
+            <nav class="nav_bar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#facts">Facts</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section" id="about">
+            <h2>Why Track Your Carbon Footprint?</h2>
+            <p>Understanding your carbon emissions helps you make smarter choices that lead to savings, better health, and a greener planet. 🌱</p>
+
+            <h2>Ways to Reduce Emissions</h2>
+            <ul>
+                <li>Use energy-efficient appliances.</li>
+                <li>Carpool, cycle, or use public transport.</li>
+                <li>Adopt a plant-based diet.</li>
+                <li>Switch to renewable energy.</li>
+                <li>Recycle and compost regularly.</li>
+            </ul>
+        </section>
+
+        <section class="calculator" id="calculator">
+            <h2>Carbon Footprint Calculator</h2>
+            <form id="carbonForm">
+                <label for="vehicle">Vehicle Emissions (kg CO₂):</label>
+                <input type="number" id="vehicle" name="vehicle" min="0" placeholder="e.g., 250" required />
+
+                <label for="electricity">Electricity Usage (kWh):</label>
+                <input type="number" id="electricity" name="electricity" min="0" placeholder="e.g., 400" required />
+
+                <label for="flights">Air Travel (km):</label>
+                <input type="number" id="flights" name="flights" min="0" placeholder="e.g., 1200" required />
+
+                <label for="diet">Diet Impact (kg CO₂):</label>
+                <input type="number" id="diet" name="diet" min="0" placeholder="e.g., 90" required />
+
+                <button type="button" onclick="calculateFootprint()">Calculate My Impact</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <section class="content-section" id="facts">
+            <h2>🌟 Fun Environmental Facts</h2>
+            <ul>
+                <li>Recycling one can saves enough energy to power a TV for 3 hours.</li>
+                <li>One meat-free day weekly = 350 miles fewer in car emissions.</li>
+                <li>Turning your thermostat down 1°C saves up to 10% energy.</li>
+                <li>LEDs use 90% less energy than old bulbs.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CarbonTrack | Helping You Build a Greener Future 🌿</p>
+            <nav class="footer-links">
+                <a href="#privacy">Privacy Policy</a> |
+                <a href="#terms">Terms</a> |
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

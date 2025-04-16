@@ -1,0 +1,154 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f4fdf4;
+    color: #333;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8659;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #186644;
+}
+
+/* Header */
+header {
+    background: #c8facc;
+    padding: 20px 0;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-text h1 {
+    font-size: 2.2rem;
+    color: #186644;
+}
+
+.header-text p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.nav_bar a {
+    font-weight: bold;
+}
+
+/* Main Sections */
+main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* Section Styling */
+.content-section {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content-section h2 {
+    color: #1d7044;
+    margin-bottom: 10px;
+}
+
+.content-section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+/* Calculator */
+.calculator {
+    background: #e3ffe3;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.calculator h2 {
+    color: #145a32;
+    margin-bottom: 15px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calculator input {
+    padding: 10px;
+    border: 1px solid #a6dba6;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.calculator button {
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.calculator button:hover {
+    background: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #145a32;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #c8facc;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
