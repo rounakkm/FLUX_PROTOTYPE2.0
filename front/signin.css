@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .signin-container {
+    background-color: #1e1e1e;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .signin-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    animation: fadeIn 1s ease;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.4rem;
+    color: #bbbbbb;
+    font-size: 14px;
+  }
+  
+  .input-group input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    background-color: #333;
+    outline: none;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 1.4s ease;
+  }
+  
+  .signin-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .bottom-text {
+    margin-top: 1rem;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    animation: fadeIn 1.6s ease;
+  }
+  
+  .bottom-text a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.98); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

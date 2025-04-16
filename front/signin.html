@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In - CarbonTrack</title>
+  <link rel="stylesheet" href="signin.css" />
+</head>
+<body>
+  <div class="signin-container">
+    <h2>Welcome to CarbonTrack</h2>
+    <form id="signin-form">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+      </div>
+      <button type="submit" class="signin-btn">Sign In</button>
+    </form>
+    <div class="bottom-text">
+      Don’t have an account? <a href="#">Register</a>
+    </div>
+  </div>
+
+  <script src="signin.js"></script>
+</body>
+</html>
