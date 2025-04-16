@@ -8,24 +8,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: #f4fdf4;
+    background: #edf7ed;
     color: #333;
     padding: 0 20px;
 }
 
 a {
     text-decoration: none;
-    color: #2d8659;
+    color: #1c5c3e;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #186644;
+    color: #11442d;
 }
 
 /* Header */
 header {
-    background: #c8facc;
+    background: #b2e0b5;
     padding: 20px 0;
     border-radius: 0 0 15px 15px;
     margin-bottom: 30px;
@@ -41,7 +41,7 @@ header {
 
 .header-text h1 {
     font-size: 2.2rem;
-    color: #186644;
+    color: #11442d;
 }
 
 .header-text p {
@@ -76,7 +76,7 @@ main {
 }
 
 .content-section h2 {
-    color: #1d7044;
+    color: #135135;
     margin-bottom: 10px;
 }
 
@@ -91,7 +91,7 @@ main {
 
 /* Calculator */
 .calculator {
-    background: #e3ffe3;
+    background: #d4f4d4;
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -99,7 +99,7 @@ main {
 }
 
 .calculator h2 {
-    color: #145a32;
+    color: #0e3d27;
     margin-bottom: 15px;
 }
 
@@ -111,14 +111,14 @@ main {
 
 .calculator input {
     padding: 10px;
-    border: 1px solid #a6dba6;
+    border: 1px solid #7fbc7f;
     border-radius: 8px;
     font-size: 1rem;
 }
 
 .calculator button {
     padding: 12px;
-    background: #28a745;
+    background: #1d6632;
     color: white;
     border: none;
     border-radius: 8px;
@@ -128,19 +128,19 @@ main {
 }
 
 .calculator button:hover {
-    background: #218838;
+    background: #155027;
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
-    color: #145a32;
+    color: #0e3d27;
     font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
-    background: #c8facc;
+    background: #b2e0b5;
     padding: 15px;
     border-radius: 15px 15px 0 0;
     text-align: center;
