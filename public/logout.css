@@ -1,0 +1,465 @@
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;/*hi hello welcome*/
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    padding: 15px 20px;
+    z-index: 500; /* Ensures it's above everything */
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    z-index: 500;
+}
+
+
+/* Flexbox Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+nav .logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Navigation Link Styling */
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #00e676; /* Highlight color */
+}
+
+/* Mobile Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    overflow-x: hidden;
+}
+
+/* Video Container */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;  /* Keep the video behind the content */
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 101%;
+    height: 101%;
+    object-fit: cover; /* Makes sure video covers entire screen */
+    transform: translate(-50%, -50%);
+}
+
+/* Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+    z-index: 10;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+/* Hero Section */
+/* Hero Section with Glowing Animation */
+.hero {
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+    animation: glow 2s infinite alternate;
+}
+/*0 0 10px rgba(255, 255, 255, 0.8), */
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(211, 210, 210, 0.8), 
+                     0 0 20px rgba(128, 128, 128, 0.6),
+                     0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(134, 134, 134), 
+                     0 0 40px rgba(255, 255, 255, 0.8),
+                     0 0 60px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .cta-button {
+    background-color: #00e676;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    font-size: 1rem;
+}
+
+/* About CarbonTrack Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.about strong {
+    color: #00772e;
+}
+
+.about em {
+    color: #555;
+    font-style: normal;
+}
+
+
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cool Pop-Up Effect on Hover */
+.card:hover {
+    transform: scale(1.1) translateY(-5px); /* Moves card slightly upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+    background: linear-gradient(135deg, #e0f7fa, #90fd9e); /* Adds a futuristic glow effect */
+}
+
+/* Developers Section */
+.developers {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.dev-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* makes sure all cards stay in a single line */
+    gap: 20px;
+    overflow-x: auto; /* lets it scroll horizontally if screen is small */
+    padding: 20px 0;
+}
+
+.dev-card {
+    background: #fff;
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    box-shadow: 0 4px 8px #0acc3a33;
+    transition: transform 0.5s;
+}
+
+.dev-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.dev-card:hover .dev-inner {
+    transform: rotateY(180deg);
+}
+
+.dev-front, .dev-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.dev-front {
+    background: linear-gradient(135deg, #90fd9e, #90fd9e);
+}
+
+.dev-back {
+    background-color: #eeeeee;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.dev-cards::-webkit-scrollbar {
+    height: 8px;
+}
+.dev-cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.dev-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Technologies Section */
+.technologies {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.technologies h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Tech Cards with Neon Glow Effect */
+.tech-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    background-color: #16213e;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Neon Glow on Hover */
+.tech-card:hover {
+    box-shadow: 0 0 15px #00e676, 0 0 30px #00e676, 0 0 60px #00e676;
+    transform: translateY(-5px);
+}
+
+.tech-card h3 {
+    color: #00e676;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #00e676;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.github-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    transform: scale(1.1);
+}
+
+.github-icon {
+    width: 120px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+/* Thank You Section */
+.thankyou {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.thankyou h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.thankyou p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}

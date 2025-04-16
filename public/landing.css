@@ -1,0 +1,201 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #0f1117;
+    color: #e0f2f1;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #1c1f26, #21242b);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #2c2f36;
+    box-shadow: 0 2px 10px rgba(0, 255, 123, 0.08);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-text h1 {
+    font-size: 2rem;
+    color: #64ffda;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .header-text p {
+    font-size: 0.95rem;
+    color: #b2dfdb;
+  }
+  
+  /* Navigation */
+  .nav_bar {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .nav_bar a {
+    color: #90a4ae;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    height: 1px;
+  }
+  
+  .nav_bar a:hover {
+    color: #64ffda;
+  }
+  
+  /* Sections */
+  .content-section {
+    padding: 3rem 2rem;
+    background-color: #161a22;
+    border-top: 1px solid #2a2d34;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .content-section h2 {
+    color: #64ffda;
+    margin-bottom: 1rem;
+  }
+  
+  .content-section p, .content-section li {
+    color: #cfd8dc;
+  }
+  
+  .content-section ul {
+    list-style: square;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Calculator Section */
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: #37474f;
+    max-width: 400px;
+    width: 100%;
+}
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    padding: 3rem 2rem;
+    background-color: #1b1e25;
+    border-top: 1px solid #2a2d34;
+    animation: slideUp 1.3s ease-in-out;
+  }
+  
+  .calculator h2 {
+    color: #64ffda;
+    margin-bottom: 1rem;
+  }
+  
+  #carbonForm {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 1.5rem;
+  }
+  
+  #carbonForm label {
+    font-weight: 600;
+    color: #80cbc4;
+  }
+  
+  #carbonForm input {
+    padding: 0.6rem;
+    background: #263238;
+    color: #e0f2f1;
+    border: 1px solid #37474f;
+    border-radius: 5px;
+  }
+  
+  #carbonForm input:focus {
+    outline: none;
+    border-color: #64ffda;
+  }
+  
+  button {
+    padding: 0.7rem 1.2rem;
+    background: #64ffda;
+    color: #0f1117;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00e5ff;
+  }
+  
+  /* Result */
+  #result {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1d23;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #2a2d34;
+  }
+  
+  .footer-content p {
+    color: #90a4ae;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a {
+    color: #80cbc4;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .footer-links a:hover {
+    color: #64ffda;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
