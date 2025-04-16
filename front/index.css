@@ -247,36 +247,36 @@ body {
 
 /* Developers Section */
 .developers {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
     text-align: center;
-    background-color: white;
-}
-
-.developers h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
 }
 
 .dev-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* makes sure all cards stay in a single line */
+    gap: 20px;
+    overflow-x: auto; /* lets it scroll horizontally if screen is small */
+    padding: 20px 0;
 }
 
-/* 3D Flip Effect for Developer Cards */
 .dev-card {
-    width: 250px;
-    height: 150px;
+    background: #fff;
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
     perspective: 1000px;
+    box-shadow: 0 4px 8px #0acc3a33;
+    transition: transform 0.5s;
 }
 
 .dev-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
     transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
 .dev-card:hover .dev-inner {
@@ -284,16 +284,15 @@ body {
 }
 
 .dev-front, .dev-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
     backface-visibility: hidden;
+    border-radius: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.2rem;
+    align-items: center;
+    padding: 10px;
 }
 
 .dev-front {
@@ -301,10 +300,22 @@ body {
 }
 
 .dev-back {
-    background: linear-gradient(135deg, black, black);
+    background-color: #eeeeee;
+    color: #333;
     transform: rotateY(180deg);
-    color: white;
 }
+
+.dev-cards::-webkit-scrollbar {
+    height: 8px;
+}
+.dev-cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.dev-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 /* Technologies Section */
 .technologies {
